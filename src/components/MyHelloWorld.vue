@@ -27,14 +27,26 @@
       <li><a href="https://vue-loader.vuejs.org" target="_blank" rel="noopener">vue-loader</a></li>
       <li><a href="https://github.com/vuejs/awesome-vue" target="_blank" rel="noopener">awesome-vue</a></li>
     </ul>
+    <hello-world
+      color="purple"
+      v-bind:value="value"
+      v-on:increment="value += 1"
+    />
   </div>
 </template>
 
 <script>
+import 'wc-example';
+
 export default {
-  name: 'HelloWorld',
+  name: 'MyHelloWorld',
   props: {
     msg: String
+  },
+  data() {
+    return {
+      value: 0 
+    }
   }
 }
 </script>
