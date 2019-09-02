@@ -8,8 +8,10 @@
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
+    "@webcomponents/webcomponentsjs": "^2.2.10",
     "core-js": "^2.6.5",
-    "vue": "^2.6.10"
+    "vue": "^2.6.10",
+    "wc-example": "git://github.com/larkintuckerllc/wc-example.git#0.1.11"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "^3.11.0",
